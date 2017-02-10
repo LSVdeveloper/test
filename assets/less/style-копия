@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,300,300italic,400italic,700,700italic&subset=latin,cyrillic); 
+@white: #ffffff;
+@orange: #ff340e;
+@gray: #efefef;
+@base: 10px;
+@dark_gray: #999999;
+@dark_gray_marker: #c9c9c9;
+@blue: #209afd;
+@width_right_part: 980px;
+
+
+
+/*Вся страница*/
+#wrapper {
+	display: auto;	
+	height:100%;
+	width:100%;
+
+}
+ul{ 
+list-style:none;
+}	
+body{
+	font-family: "Ubuntu";
+	background-color: @gray;
+	width: 100%;
+	height: 100%;
+	}
+/*Верхняя часть*/
+#header{
+	background-color: @white;
+	line-height:60px;
+	padding-left:29px;
+}
+	
+/*Левая часть*/
+aside{
+	/*background-color:black;*/
+	margin-top:30px;
+	float: left;
+	}
+
+     
+	
+        #marker_list { 
+			font-weight: normal;
+			color:@orange;}
+		#marker_list li:before {
+			color: @dark_gray_marker; /* Цвет маркера */
+			content: "\25AA"; /* Сам маркер */
+			padding-right: 10px; /* Расстояние от маркера до текста */
+			padding-left: 5px;
+			
+			
+   }
+
+aside div{
+	margin-left: 29px;
+	margin-bottom:2px;
+	width:167px;
+}
+
+#plus_task_button{
+	text-transform: lowercase;
+	background-color: @orange;
+	color:@white;
+	font-weight: bold;
+	height: 38px;
+	line-height: 38px;
+	text-align:  center;
+	font-size: 14pt;
+	font-variant: small-caps;
+	margin-bottom: 29px;
+	width:196px;
+	
+	
+	
+}
+#information{
+	color: @dark_gray;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	padding-left:29px;
+	background-color: @white;
+	height: 76px;
+	font-size: 11pt;
+	display:table;
+	}
+#information ul{
+	display: table-cell;
+    vertical-align: middle;
+}	
+
+#reports {
+	color: @orange;
+	font-weight: bold;
+	padding-left:29px;
+	background-color: @white;
+	line-height: 52px;
+}
+#all_tasks{
+	font-weight: bold;
+	width:167px;
+	background-color: @white;
+	padding-left:29px;
+	height: 100px;
+	display:table;
+}
+#all_tasks span{
+	display: table-cell;
+    vertical-align: middle;
+}
+/*Правая часть*/
+#openTask{
+	margin-top:30px;
+	background-color: red;
+	float:right;
+	height: 470px;
+	width: @width_right_part;
+	margin-right:36px;
+	margin-bottom:30px;
+}
+/*Подвал*/
+footer{
+	float:right;
+	}
+#footer{
+	clear:both;
+	/*background-color:green;*/
+	width:@width_right_part;
+	margin-right:36px;
+	/*overflow:hidden;*/
+	}
+.footer_top {
+  font-size: 18px;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-align: left;
+  
+  
+}
+
+.footer_top ul {
+
+		
+	}
+.footer_top li{
+	display: inline-block;
+	vertical-align:top;
+}
+.footer_top_right{
+	background-color: @white;
+	width: @width_right_part/2-64px;
+	height: 266px;
+	padding-left:64px;
+	padding-top: 80px;
+	
+	
+	
+}
+.footer_top_right a{
+	color: @blue;
+    text-decoration: none;
+	
+}
+
+.footer_top_left{
+	background-color:@orange;
+	color: @white;
+	width: @width_right_part/2-64px;
+	height: 266px;
+	padding-left:64px;
+	padding-top: 80px;
+	
+    
+}
+
+.message_footer_button{
+	background-color: @white;
+	color: black;
+	text-decoration: none;
+	height: 38px;
+    padding: 0 19px;
+    display: inline-block;
+    vertical-align: top;
+    font: 700 12px/38px 'Ubuntu';
+    top: 11px;
+    letter-spacing: 0.5px;
+	position:relative;
+}
+ 
+.footer_title {
+		margin: 0 0 12px 0;
+		font: 700 24px/1.5 'Ubuntu';
+	}
+.footer_bottom{	
+height:138px;
+ font:13px/1.3 'Ubuntu';}
+ 
+.footer_bottom span{
+line-height:138px;
+}
+ 
+.footer_bottom div{
+	display: inline-block;
+	font-family: "Ubuntu";
+	color: @dark_gray;
+}
+
+#phone {
+  font-size: 13px;
+  font-family: "Ubuntu";
+  color: black;
+  left: 554px;
+  padding-left: 120px;
+} 
+/*яркий акцент*/
+#social {
+	float:right;
+
+}
+#social li{
+	display: inline-block;
+}
+.bright{
+	background-color:@orange;
+	color: @white;
+}
+/*черное на белом*/
+.simple{
+	background-color: @white;
+	color: black;
+}
+

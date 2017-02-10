@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Вся страница*/
+#wrapper {
+  display: auto;
+  height: 100%;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Ubuntu";
+  background-color: #efefef;
+  width: 100%;
+  height: 100%;
+}
+/*Верхняя часть*/
+#header {
+  background-color: #ffffff;
+  line-height: 60px;
+  padding-left: 29px;
+}
+/*Левая часть*/
+aside {
+  /*background-color:black;*/
+  margin-top: 30px;
+  float: left;
+}
+#marker_list {
+  font-weight: normal;
+  color: #ff340e;
+}
+#marker_list li:before {
+  color: #c9c9c9;
+  /* Цвет маркера */
+  content: "\25AA";
+  /* Сам маркер */
+  padding-right: 10px;
+  /* Расстояние от маркера до текста */
+  padding-left: 5px;
+}
+aside div {
+  margin-left: 29px;
+  margin-bottom: 2px;
+  width: 167px;
+}
+#plus_task_button {
+  text-transform: lowercase;
+  background-color: #ff340e;
+  color: #ffffff;
+  font-weight: bold;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14pt;
+  font-variant: small-caps;
+  margin-bottom: 29px;
+  width: 196px;
+}
+#information {
+  color: #999999;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  padding-left: 29px;
+  background-color: #ffffff;
+  height: 76px;
+  font-size: 11pt;
+  display: table;
+}
+#information ul {
+  display: table-cell;
+  vertical-align: middle;
+}
+#reports {
+  color: #ff340e;
+  font-weight: bold;
+  padding-left: 29px;
+  background-color: #ffffff;
+  line-height: 52px;
+}
+#all_tasks {
+  font-weight: bold;
+  width: 167px;
+  background-color: #ffffff;
+  padding-left: 29px;
+  height: 100px;
+  display: table;
+}
+#all_tasks span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*Правая часть*/
+#tasks {
+  margin-top: 30px;
+  background-color: red;
+  float: right;
+  height: 470px;
+  width: 980px;
+  margin-right: 36px;
+  margin-bottom: 30px;
+}
+#project_title {
+  margin-bottom: 2px;
+  /*background-color: blue;*/
+  padding-bottom: 29px;
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+}
+#table {
+  width: 100%;
+}
+#table td {
+  margin-bottom: 2px;
+  background-color: #ffffff;
+  line-height: 50px;
+}
+#table_head {
+  background-color: #ffffff;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 50px;
+  text-align: left;
+  left: 1116px;
+}
+#table_title {
+  background-color: #ffffff;
+  margin-bottom: 2px;
+  font-size: 22px;
+  line-height: 75px;
+  text-align: left;
+}
+#table_config {
+  margin-bottom: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 72px;
+  display: table;
+  line-height: 72px;
+}
+#table_config div {
+  display: table-cell;
+}
+#project_title div {
+  display: inline-block;
+}
+#flash {
+  background-color: #ffffff;
+  line-height: 38px;
+  width: 38px;
+  margin-right: 20px;
+}
+/*Подвал*/
+footer {
+  float: right;
+}
+#footer {
+  clear: both;
+  /*background-color:green;*/
+  width: 980px;
+  margin-right: 36px;
+}
+.footer_top {
+  font-size: 18px;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-align: left;
+}
+.footer_top li {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer_top_right {
+  background-color: #ffffff;
+  width: 426px;
+  height: 266px;
+  padding-left: 64px;
+  padding-top: 80px;
+}
+.footer_top_right a {
+  color: #209afd;
+  text-decoration: none;
+}
+.footer_top_left {
+  background-color: #ff340e;
+  color: #ffffff;
+  width: 426px;
+  height: 266px;
+  padding-left: 64px;
+  padding-top: 80px;
+}
+.message_footer_button {
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  height: 38px;
+  padding: 0 19px;
+  display: inline-block;
+  vertical-align: top;
+  font: 700 12px/38px 'Ubuntu';
+  top: 11px;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.footer_title {
+  margin: 0 0 12px 0;
+  font: 700 24px/1.5 'Ubuntu';
+}
+.footer_bottom {
+  height: 138px;
+  font: 13px/1.3 'Ubuntu';
+}
+.footer_bottom span {
+  line-height: 138px;
+}
+.footer_bottom div {
+  display: inline-block;
+  font-family: "Ubuntu";
+  color: #999999;
+}
+#phone {
+  font-size: 13px;
+  font-family: "Ubuntu";
+  color: black;
+  left: 554px;
+  padding-left: 120px;
+}
+/*яркий акцент*/
+#social {
+  float: right;
+}
+#social li {
+  display: inline-block;
+}
+.bright {
+  background-color: #ff340e;
+  color: #ffffff;
+}
+/*черное на белом*/
+.simple {
+  background-color: #ffffff;
+  color: black;
+}

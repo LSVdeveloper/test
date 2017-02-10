@@ -1,0 +1,122 @@
+[
+  {
+    "t": "A",
+    "name": "Вывести счетчик компаний и договоров",
+    "marker": "red",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "23.12.15",
+	"update": "27.12.15",
+	"deadline": "31.12.15"
+  },
+  {
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "17.12.15",
+	"update": "22.12.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Выполнено",
+	"solut": "Не решено",
+	"add": "14.12.15",
+	"update": "22.11.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Вывести счетчик компаний и договоров",
+    "marker": "red",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "23.12.15",
+	"update": "27.12.15",
+	"deadline": "31.12.15"
+  },
+  {
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "17.12.15",
+	"update": "22.12.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Выполнено",
+	"solut": "Не решено",
+	"add": "14.12.15",
+	"update": "22.11.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Вывести счетчик компаний и договоров",
+    "marker": "red",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "23.12.15",
+	"update": "27.12.15",
+	"deadline": "31.12.15"
+  },
+  {
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "17.12.15",
+	"update": "22.12.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Выполнено",
+	"solut": "Не решено",
+	"add": "14.12.15",
+	"update": "22.11.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Вывести счетчик компаний и договоров",
+    "marker": "red",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "23.12.15",
+	"update": "27.12.15",
+	"deadline": "31.12.15"
+  },
+  {
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Открыто",
+	"solut": "Не решено",
+	"add": "17.12.15",
+	"update": "22.12.15",
+	"deadline": "7.01.16"
+	},
+	{
+    "t": "A",
+    "name": "Оптимизировать Kaog getProducts",
+    "marker": "green",
+	"status": "Выполнено",
+	"solut": "Не решено",
+	"add": "14.12.15",
+	"update": "22.11.15",
+	"deadline": "7.01.16"
+	}
+]

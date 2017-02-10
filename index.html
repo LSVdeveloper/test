@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html ng-app="taskApp">
+	<head>
+		<meta charset="utf-8">
+		<title>	Компания TrendSoft - Задачи </title>
+		<link rel="stylesheet" href="assets/less/style.css">
+		<link rel="icon" href="assets/images/logoMini.png" type="image/icon">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script>
+		var taskApp = angular.module('taskApp', []);
+		taskApp.controller('TaskCtrl', function ($scope, $http){
+			$http.get('assets/js/tasks.json').success(function(data) {
+				$scope.tasks = data;
+			});
+		});
+	</script>
+	</head>	
+	<body>
+		<div id="wrapper">
+			<!--/header-->
+			<header id="header">
+				<a href="http://www.trendsoft.ru/ru/"><img src="assets/images/logo.png"></a>
+			</header>
+			<aside>
+				<div id="plus_task_button">Добавить задачу</div>	
+				<div id="information"><ul>Сводная<br>информация</ul></div>
+				<div id="all_tasks">
+					<span>
+					<p>Все задачи</p>
+					<ul id="marker_list" type="square"> 
+						<li id="open_tasks">Открытые</li> 
+						<li id="close_tasks">Выполненные</li> 
+					</ul>	
+					</span>
+				</div>
+				<div id="reports">Отчеты</div>
+			</aside>
+			
+			<section>
+			<div id="tasks">
+				<div id="project_title">
+				<div id="flash"><img src="assets/images/flash.png" alt=" "> </div>
+				<div >Barselona Design</div>
+				</div>
+				<div id="table_title">
+				<p>Открытые задачи</p>
+				
+				</div>
+				<div id="table_config">
+					<div>
+					<form>
+						<select ng-model="getUpdateTasks.update" >
+							<option value="">Все задачи</option>
+							<option value="12.15">Декабрь, 2015</option>
+							<option value="11.15">Ноябрь, 2015</option>
+						</select>
+					</form>
+					</div>
+					<div>
+					<form>
+						<select ng-model="getOpenTasks.status" >
+							<option value="">Все задачи</option>
+							<option value="Открыто">Открытые задачи</option>
+							<option value="Выполнено">Выполненные задачи</option>
+						</select>
+					</form>
+					</div>
+					<div>
+					<form>
+						<div class="search">
+						<div class="input-group">
+						<input type="text" class="form-control" placeholder="Поиск задач по проекту" ng-model="searchTasks.name">
+						</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				<table id="table" ng-controller="TaskCtrl">
+					<tr id="table_head">
+						<th>Т</th>
+						<th>Тикет</th>
+						<th>Название</th>
+						<th>П</th>
+						<th>Статус</th>
+						<th>Решение</th>
+						<th>Создано</th>
+						<th>Обновлено</th>
+						<th>Дедлайн</th>
+						<th>...</th>
+					</tr>
+					
+					<tr ng-repeat="task in tasks|filter:searchTasks|filter:getOpenTasks|filter:getUpdateTasks">
+						<td>1</td>
+						<td>{{task.t}}</td>
+						<td>{{task.name}}</td>
+						<td>{{task.marker}}</td>
+						<td>{{task.status}}</td>
+						<td>{{task.solut}}</td>
+						<td>{{task.add}}</td>
+						<td>{{task.update}}</td>
+						<td>{{task.deadline}}</td>
+						<td>...</td>
+					</tr>
+				</table>
+				
+			</div>
+			</section>
+			 
+			
+			<footer>
+				<div id="footer">
+					<div class="footer_top">
+						<ul><!--
+							--><li>
+							<div class="footer_top_left">
+								<div class="footer_title">Возникли вопросы?</div>
+								<p>Воспользуйтесь формой<br>отправки заявки и мы свяжемся<br>с вами</p>
+								<a class="message_footer_button" lang="ru" href="#">Оставить заявку</a>
+							</div>
+							<li>
+							<div class="footer_top_right">
+								<div class="footer_title">или свяжитесь с нами<br>напрямую:</div>
+								<p>г. Москва ул. Викторенко д. 11<br>+7 (499) 502-81-39</p>
+								<a href="mailto:order@trendsoft.ru">order@trendsoft.ru</a>
+							</div>
+						</ul>
+					
+					</div>
+
+					<div class="footer_bottom">
+						<span>
+						<div>
+							© ООО «Трендсофт», 2011-2015
+						</div>
+						
+						<div id="phone">
+							+7 (499) 502-81-39
+						</div>
+						
+						<ul id="social">
+							<li><a href="https://www.facebook.com/trndsft/"><img src="assets/images/fb.png" ></a></li>
+							<li><a href="https://vk.com/trendsoft"><img src="assets/images/vk.png" ></a></li>
+						</ul>
+						</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+	</body>
+</html>
